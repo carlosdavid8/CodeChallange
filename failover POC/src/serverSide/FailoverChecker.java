@@ -18,6 +18,8 @@ public class FailoverChecker extends Thread {
 		int backup = 0;
 		Socket s = new Socket();
 		try {
+			System.out.println("FailoverChecker is Running...");
+			Thread.sleep(10000);
 			host = PropertiesHelper.getHost();
 			port = PropertiesHelper.getPort();
 			backup = PropertiesHelper.getBackup();
